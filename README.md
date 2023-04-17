@@ -34,3 +34,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 #### Exercises
 
 [1.5](./ch1/exercise5.c)
+
+### Symbolic Constants
+
+[Temperature Conversion with Symbolic Constants](./ch1/f_to_c_symbolic_constant.c)
