@@ -38,3 +38,13 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 ### Symbolic Constants
 
 [Temperature Conversion with Symbolic Constants](./ch1/f_to_c_symbolic_constant.c)
+
+### Character Input and Output
+
+[File Copying](./ch1/file_copying.c)
+
+#### Exercises
+
+[1.6](./ch1/exercise6.c)
+
+[1.7](./ch1/exercise7.c)
