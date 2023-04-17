@@ -26,3 +26,11 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [1.3](./ch1/exercise3.c)
 
 [1.4](./ch1/exercise4.c)
+
+### The For statement
+
+[Temperature Coversion For Loop Version](./ch1/exercise5.c)
+
+#### Exercises
+
+[1.5](./ch1/exercise5.c)
