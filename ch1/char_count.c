@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-// Tips: press ctrl-d to give EOF and break the loop
+/* Tips: press ctrl-d to give EOF and break the loop */
 
 /* 
  * count characters in input; 1st version
