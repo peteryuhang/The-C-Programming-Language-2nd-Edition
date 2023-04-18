@@ -47,6 +47,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Line Counting](./ch1/line_count.c)
 
+[Word Counting](./ch1/word_count.c)
+
 #### Exercises
 
 [1.6](./ch1/exercise6.c)
@@ -58,3 +60,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [1.9](./ch1/exercise9.c)
 
 [1.10](./ch1/exercise10.c)
+
+[1.11](./ch1/exercise11.c)
+
+[1.12](./ch1/exercise12.c)
