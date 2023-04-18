@@ -23,9 +23,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 #### Exercises
 
-[1.3](./ch1/exercise3.c)
-
-[1.4](./ch1/exercise4.c)
+[1.3](./ch1/exercise3.c), [1.4](./ch1/exercise4.c)
 
 ### The For statement
 
@@ -51,16 +49,4 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 #### Exercises
 
-[1.6](./ch1/exercise6.c)
-
-[1.7](./ch1/exercise7.c)
-
-[1.8](./ch1/exercise8.c)
-
-[1.9](./ch1/exercise9.c)
-
-[1.10](./ch1/exercise10.c)
-
-[1.11](./ch1/exercise11.c)
-
-[1.12](./ch1/exercise12.c)
+[1.6](./ch1/exercise6.c), [1.7](./ch1/exercise7.c), [1.8](./ch1/exercise8.c), [1.9](./ch1/exercise9.c), [1.10](./ch1/exercise10.c), [1.11](./ch1/exercise11.c), [1.12](./ch1/exercise12.c)
