@@ -43,6 +43,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [File Copying](./ch1/file_copying.c)
 
+[Count Characters](./ch1/count_char.c)
+
 #### Exercises
 
 [1.6](./ch1/exercise6.c)
