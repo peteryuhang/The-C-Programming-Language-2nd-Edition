@@ -43,7 +43,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [File Copying](./ch1/file_copying.c)
 
-[Count Characters](./ch1/count_char.c)
+[Characters Counting](./ch1/char_count.c)
 
 #### Exercises
 
