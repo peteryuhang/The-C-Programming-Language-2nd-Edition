@@ -72,3 +72,11 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 - In C, all function arguments are passed **"by value"**. This means that the called function is given the values of its arguments in temporary variables rather than the original
 - When necessary, it is possible to arrange for a function to modify a variable in a calling routine. The caller must provide the **address** of the variable to be set (technically a **pointer** to the variable)
 - When the name of an array is used as an argument, the value passed to the function is the location or address of the beginning of the array - there is no copying of array elements
+
+### Character Arrays
+
+[Print Longest Line](./ch1/print_longest_line.c)
+
+#### Exercises
+
+[1.16](./ch1/exercise16.c), [1.17](./ch1/exercise17.c), [1.18](./ch1/exercise18.c), [1.19](./ch1/exercise19.c)
