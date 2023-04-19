@@ -58,3 +58,12 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 #### Exercises
 
 [1.13](./ch1/exercise13.c), [1.14](./ch1/exercise14.c)
+
+### Functions
+
+[Power Function](./ch1/power.c)
+
+#### Exercises
+
+[1.15](./ch1/exercise15.c)
+
