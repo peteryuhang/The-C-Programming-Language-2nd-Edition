@@ -87,4 +87,4 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 ### Final Exercises
 
-[1.20](./ch1/exercise20.c)
+[1.20](./ch1/exercise20.c), [1.21](./ch1/exercise21.c)
