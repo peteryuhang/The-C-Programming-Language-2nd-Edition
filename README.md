@@ -80,3 +80,6 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 #### Exercises
 
 [1.16](./ch1/exercise16.c), [1.17](./ch1/exercise17.c), [1.18](./ch1/exercise18.c), [1.19](./ch1/exercise19.c)
+
+### External Variables and Scope
+[Print Longest Line Special Version](./ch1/print_longest_line_external.c)
