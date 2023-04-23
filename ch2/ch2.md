@@ -1,3 +1,4 @@
+## Types & Variables
 
 - Don't begin variable names with underscore, however, since library routinue often use such names
 - Unsigned constants are written with a terminal `u` or `U`, and the suffix `ul` or `UL` indicates unsigned long
@@ -38,6 +39,8 @@
                 JUL, AUG, SEP, OCT, NOV, DEC }; /* FEB is 2, MAR is 3, etc. */
   ```
 - For an array, the const qualifier says that the elements will not be altered
+
+## Operators
 - Precedence of operator (from **higher to lower**)
   - ! ~ \+ \- (unary)
   - \* / % 
@@ -73,3 +76,5 @@
   }
   ```
   - If arguments are declared by a function prototype, as they normally should be, the declaration causes automatic coercion of any arguments when the fuction is called
+- The expression `++n` increments n **before** its value is used, while `n++` increments n **after** its value has been used
+- The increment and decrement operators can only be appiled to variables; `(i+j)++` is illegal

@@ -85,7 +85,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 ## Ch2. Types, Operators, and Expressions
 
-[2.1 ~ 2.7](./ch2/ch2.md)
+[Types, Operators and Expressions](./ch2/ch2.md)
 
 ### Exercises
 
