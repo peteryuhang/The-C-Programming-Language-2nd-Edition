@@ -78,3 +78,30 @@
   - If arguments are declared by a function prototype, as they normally should be, the declaration causes automatic coercion of any arguments when the fuction is called
 - The expression `++n` increments n **before** its value is used, while `n++` increments n **after** its value has been used
 - The increment and decrement operators can only be appiled to variables; `(i+j)++` is illegal
+- **Bitwise Operators**
+  ```
+  &      bitwise AND
+  |      bitwise inclusive OR
+  ^      bitwise exclusive OR
+  <<     left shift
+  >>     right shift
+  ~      one's complement (unary)
+  ```
+  - `&` is often used to mask off some set of bits
+  - `|` is often used to turn bits on
+  - Right shifting an **unsigned** quantity always fills vacated bits with 0
+  - Right shifting a signed quantity will fill with sign bits **("arithmetic shift")** on some machines and with 0-bits **("logic shift")** on others
+  - The portable form (`x & ~077`) involves no extra cost, since `~077` is a constant expression that can be evaluated at **compile time**
+  - `getbits(x,p,n)`
+    ```c
+    /* 
+     * getbits: get n bits from position p
+     * 
+     * assuming the position start at the right end and that n and p are sensible positive values
+     * 
+     * eg. getbits(x,4,3) for 76543210 will return 432
+     */
+    unsigned getbits(unsigned x, int p, int n) {
+      return (x >> (p+1-n)) & ~(~0 << n);
+    }
+    ```
