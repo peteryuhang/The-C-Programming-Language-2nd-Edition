@@ -42,9 +42,10 @@
 
 ## Operators
 - Precedence of operator (from **higher to lower**)
-  - ! ~ \+ \- (unary)
+  - () [] -> .
+  - ! ~ ++ -- \+ \- * & (type) sizeof
   - \* / % 
-  - \+ \- (binary)
+  - \+ \-
   - << >>
   - \> >= < <=
   - == !=
@@ -56,6 +57,18 @@
   - ?:
   - = += -= *= /= %= &= |= ^= <<= >>=
   - ,
+- C, like most language, does not specify the **order** in which the **operands** of an **operator** are evaluated. (The exceptions are &&, ||, ?:, and ',')
+- Function calls, nested assignment statements, and increment and decrement operators cause **"side effects"** - some variable is changed as a by-product of the evaluation of an expression, eg.
+  - Compiler can interpret this in different ways, and generate different answers depending on their interpretation.
+    ```c
+    printf("%d %d\n", ++n, power(2, n)); // WRONG
+
+    ++n;
+    printf("%d %d\n", n, power(2, n));
+
+    a[i] = i++;
+    ```
+  - The moral is that writing code that depends on order of evaluation is a bad programming practice in any language, since the best order depends strongly on machine architecture
 - In general, the only **automatic conversions** are those that **convert a "narrower" operand into a "wider"** one without losing information
   ```c
   /* atoi: convert s to integer */
