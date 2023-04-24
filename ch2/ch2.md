@@ -105,3 +105,9 @@
       return (x >> (p+1-n)) & ~(~0 << n);
     }
     ```
+- **Assignment Operators**
+  - `expr1 op= expr2` is equivalent to `expr1 = (expr1) op (expr2)`
+  - Quite apart from conciseness, assignment operators have the advantage that they correspond **better to the way people think**. We say "add 2 to i" or "increment i by 2" not "take i, add 2, then put the result back in i"
+  - Assignment operator sometime can make code easy to read, eg.
+    `yyval[yypv[p3+p4] + yypv[p1+p2]] += 2`
+  - The type of an assignment expression is the type of its left operand, and the value is the value after the assignment
