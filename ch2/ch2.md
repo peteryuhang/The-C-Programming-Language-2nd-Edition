@@ -54,7 +54,7 @@
   - &&
   - ||
   - ?:
-  - =
+  - = += -= *= /= %= &= |= ^= <<= >>=
   - ,
 - In general, the only **automatic conversions** are those that **convert a "narrower" operand into a "wider"** one without losing information
   ```c
@@ -111,3 +111,17 @@
   - Assignment operator sometime can make code easy to read, eg.
     `yyval[yypv[p3+p4] + yypv[p1+p2]] += 2`
   - The type of an assignment expression is the type of its left operand, and the value is the value after the assignment
+- **Conditional Expressions** 
+  - `expr1 ? expr2 : expr3`
+  - The conditional expression is indeed an expression, and it can be used wherever any other expression can be
+  - If `expr2` and `expr3` are of different types, the type of result is determined by the coversion rules eg.
+    - assuming n is **int**, and f is **float**, so `(n > 0) ? f : n` is of type float regardless of whether n is positive
+  - Some examples for conditional expressions
+    - `z = (a > b) ? a : b;    // z = max(a,b)`
+    - print the elements in an array in the format of 10 element per line
+      ```c
+      for (i = 0; i < n; ++i)
+        printf("%6d%c", a[i], (i%10==9 || i==n-1) ? '\n' : ' ');
+      ```
+    - `printf("You have %d item%s. \n", n, n==1 ? "" : "s");`
+
