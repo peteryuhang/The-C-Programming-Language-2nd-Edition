@@ -114,6 +114,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Control Flow](./ch3/ch3.md)
 
+[Shell Sort](./ch3/shellsort.c)
+
 ### Exercise
 
 [3.1](./ch3/exercise1.c)
