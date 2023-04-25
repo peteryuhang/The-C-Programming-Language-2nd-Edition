@@ -108,3 +108,12 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [2.9](./ch2/exercise9.c)
 
 [2.10](./ch2/exercise10.c)
+
+
+## Ch3. Control Flow
+
+[Control Flow](./ch3/ch3.md)
+
+### Exercise
+
+[3.1](./ch3/exercise1.c)
