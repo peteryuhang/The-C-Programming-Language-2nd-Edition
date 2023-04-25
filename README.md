@@ -121,3 +121,5 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [3.1](./ch3/exercise1.c)
 
 [3.2](./ch3/exercise2.c)
+
+[3.3](./ch3/exercise3.c)

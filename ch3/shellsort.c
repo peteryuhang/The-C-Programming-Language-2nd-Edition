@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 /* 
- * shell sort is a optimization version of insertion sort
+ * shell sort is an optimization version of insertion sort
+ * It can avoid large operation on certain special cases (eg. 2,3,4,5,6,7,1)
  * 
+ * The worest time complexity still O(n^2), but its avg time complexity can reach O(nlogn)
+ * which is better than original insertion sort
  */
 void insertion_sort(int v[], int n, int gap);
 void shell_sort(int v[], int n);
