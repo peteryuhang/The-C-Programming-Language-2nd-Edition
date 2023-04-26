@@ -129,3 +129,14 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [3.5](./ch3/exercise5.c)
 
 [3.6](./ch3/exercise6.c)
+
+
+## Ch4. Functions and Program Structure
+
+[Function in C](./ch4/ch4.md)
+
+[Pattern-Searching Program](./ch4/basic_func_example.c)
+
+### Exercise
+
+[4.1](./ch4/exercise1.c)
