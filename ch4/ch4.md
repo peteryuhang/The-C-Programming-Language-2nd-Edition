@@ -23,3 +23,5 @@
   - Function must been declared and defined **consistently**. Otherwise some potential issue might not been detected even by compiler
   - Declaration is necessary, otherwise it will be decided by the context to be a function name, which could make potential bug or issue
   - If the function takes arguments, declare them; if it takes no arguments, use **void**. Because empty list just mean that nothing is to be assumed about the arguments of function; all parameter checking is turned off
+- Function themselves are **always external**, because C does not allow functions to be defined inside other functions
+- **External Linkage**: The standard that external variable and functions have the property that all references to them by the same name are references to the same thing

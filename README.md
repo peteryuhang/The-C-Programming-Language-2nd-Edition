@@ -137,6 +137,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Pattern-Searching Program](./ch4/basic_func_example.c)
 
+[Reverse Polish Notation](./ch4/reverse_polish_notation.c)
+
 ### Exercise
 
 [4.1](./ch4/exercise1.c)
