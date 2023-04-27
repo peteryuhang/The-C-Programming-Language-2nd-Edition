@@ -140,3 +140,5 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 ### Exercise
 
 [4.1](./ch4/exercise1.c)
+
+[4.2](./ch4/exercise2.c)
