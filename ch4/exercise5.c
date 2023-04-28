@@ -12,11 +12,6 @@ int getop(char[]);
 void push(double);
 double pop(void);
 
-double top(void);
-void dup(void);
-void swap(void);
-void clear(void);
-
 void math_func(char[]);
 
 
@@ -57,29 +52,6 @@ int main() {
       else
         printf("error: zero divisor\n");
       break;
-    case '%':
-      op2 = pop();
-      if (op2 != 0.0)
-        push(fmod(pop(), op2));
-      else
-        printf("error: modulo by zero\n");
-      break;
-    // print the top element
-    case 't':
-      printf("the top element is %lf", top());
-      break;
-    // duplicate the top element
-    case 'd':
-      dup();
-      break;
-    // swap the top two elements
-    case 's':
-      swap();
-      break;
-    // clear the stack
-    case 'c':
-      clear();
-      break;
     case '\n':
       printf("\t%.8g\n", pop());
       break;
@@ -114,40 +86,6 @@ double pop(void) {
     printf("error of pop: stack empty\n");
     return 0.0;
   }
-}
-
-/* top: return top value from stack */
-double top(void) {
-  if (sp > 0)
-    return val[sp];
-  else {
-    printf("error of top: stack empty\n");
-    return 0.0;
-  }
-}
-
-/* dup: duplicate the top element */
-void dup(void) {
-  if (sp > 0) {
-    val[sp] = val[sp - 1];
-    ++sp;
-  } else {
-    printf("error of duplicate: stack empty\n");
-  }
-}
-
-/* swap: swap the top two elements */
-void swap(void) {
-  int tmp;
-  if (sp >= 2)
-    tmp = val[sp - 1], val[sp - 1] = val[sp - 2], val[sp - 2] = tmp;
-  else
-    printf("error of swap: stack element not enough\n");
-}
-
-/* clear: clear the stack */
-void clear(void) {
-  sp = 0;
 }
 
 /* math_func: based on string s to apply corresponding math function */
@@ -193,12 +131,7 @@ int getop(char s[]) {
       return s[0];
   }
   if (!isdigit(c) && c != '.') {
-    // check whether it is a negative number
-    if (c == '-' && isdigit(tmp = getch())) {
-      s[++i] = c = tmp;
-    } else {
-      return c;       /* not a number */
-    }
+    return c;       /* not a number */
   }
   if (isdigit(c))   /* collect integer part */
     while (isdigit(s[++i] = c = getch()))

@@ -52,13 +52,6 @@ int main() {
       else
         printf("error: zero divisor\n");
       break;
-    case '%':
-      op2 = pop();
-      if (op2 != 0.0)
-        push(fmod(pop(), op2));
-      else
-        printf("error: modulo by zero\n");
-      break;
     // print the top element
     case 't':
       printf("the top element is %lf", top());
@@ -160,12 +153,7 @@ int getop(char s[]) {
 
   i = 0;
   if (!isdigit(c) && c != '.') {
-    // check whether it is a negative number
-    if (c == '-' && isdigit(tmp = getch())) {
-      s[++i] = c = tmp;
-    } else {
-      return c;       /* not a number */
-    }
+    return c;       /* not a number */
   }
   if (isdigit(c))   /* collect integer part */
     while (isdigit(s[++i] = c = getch()))
