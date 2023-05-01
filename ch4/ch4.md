@@ -47,3 +47,10 @@
   ```
   - These **name will not conflict** with the same names in other files of the same program
   - Static can also been used for **internal variable**. Internal static variable provide private, permanent storage within a single function
+- **Register Variables**
+  - A *register* declaration advises the compiler that the variable in question will be heavily used
+  - The idea is that register variables are to be placed in machine registers, which may result in smaller and faster programs
+  - Compilers are free to ignore the advice
+  - The register declaration can only be applied to **automatic variables** and to the **formal parameters** of a function
+  - It is not possible to take the address of a register variable, regardless of whether the variable is actually placed in register
+  - The specific restrictions on number and types of register variables vary from machine to machine
