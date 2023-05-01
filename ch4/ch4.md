@@ -25,3 +25,17 @@
   - If the function takes arguments, declare them; if it takes no arguments, use **void**. Because empty list just mean that nothing is to be assumed about the arguments of function; all parameter checking is turned off
 - Function themselves are **always external**, because C does not allow functions to be defined inside other functions
 - **External Linkage**: The standard that external variable and functions have the property that all references to them by the same name are references to the same thing
+- The scope of an external variable or a function lasts from the point at which it is declared to the end of the file being compiled
+  ```c
+  main() {...}
+
+  int sp = 0;
+  double val[MAXVAL];
+
+  void push(double f) {...}
+  double pop(void) {...}
+  ```
+  - On above example, variable sp and val can be used in push and pop w/o declaration, but main need declaration before use them
+- A declaration **announces the properties** of a variable; a definition also cause storage to be set aside
+  - There must be only one **definition** of an external variable among all the files that make up the source program; other files may contain **extern** declarations to access it
+  - **Array sizes** must be specified with definition, but are optional with an extern declaration
