@@ -39,3 +39,11 @@
 - A declaration **announces the properties** of a variable; a definition also cause storage to be set aside
   - There must be only one **definition** of an external variable among all the files that make up the source program; other files may contain **extern** declarations to access it
   - **Array sizes** must be specified with definition, but are optional with an extern declaration
+- **Static Variables**
+  - The static declaration applied to an **external variable or function**, limits the scope of that object to the rest of the source file being compiled
+  ```c
+  static char buf[BUFSIZE];
+  static int bufp = 0;
+  ```
+  - These **name will not conflict** with the same names in other files of the same program
+  - Static can also been used for **internal variable**. Internal static variable provide private, permanent storage within a single function
