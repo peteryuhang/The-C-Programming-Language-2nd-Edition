@@ -139,6 +139,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Reverse Polish Notation](./ch4/reverse_polish_notation.c)
 
+[Quick Sort](./ch4/qsort.c)
+
 ### Exercise
 
 [4.1](./ch4/exercise1.c)
