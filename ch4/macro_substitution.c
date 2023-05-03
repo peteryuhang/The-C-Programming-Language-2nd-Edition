@@ -31,6 +31,14 @@
  */
 #define paste(front, back) front ## back
 
+/* 
+ * The provides a way to include code selectively, depending on the value of conditions
+ * evaluated during compilation
+ */
+#if !defined(forever)  // #ifndef forever   do the same thing 
+#define forever while(true) {}
+#endif
+
 
 int main() {
   int m1 = 0, n1 = 1;
