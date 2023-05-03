@@ -141,6 +141,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Quick Sort](./ch4/qsort.c)
 
+[Macro Substitution](./ch4/macro_substitution.c)
+
 ### Exercise
 
 [4.1](./ch4/exercise1.c)
@@ -168,3 +170,5 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [4.12](./ch4/exercise12.c)
 
 [4.13](./ch4/exercise13.c)
+
+[4.14](./ch4/exercise14.c)
