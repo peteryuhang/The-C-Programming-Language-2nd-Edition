@@ -178,4 +178,6 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Pointers and Arrays](./ch5/pointers_and_arrays.md)
 
+[Get Int](./ch5/getint.c)
+
 ### Exercise
