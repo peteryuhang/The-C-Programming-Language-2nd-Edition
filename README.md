@@ -172,3 +172,10 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [4.13](./ch4/exercise13.c)
 
 [4.14](./ch4/exercise14.c)
+
+
+## Ch5. Pointers and Arrays
+
+[Pointers and Arrays](./ch5/pointers_and_arrays.md)
+
+### Exercise
