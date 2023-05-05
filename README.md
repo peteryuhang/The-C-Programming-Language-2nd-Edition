@@ -83,9 +83,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [1.24](./ch1/exercise24.c)
 
-## Ch2. Types, Operators, and Expressions
-
-[Types, Operators and Expressions](./ch2/ch2.md)
+## [Ch2. Types, Operators, and Expressions](./ch2/ch2.md)
 
 ### Exercises
 
@@ -110,9 +108,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [2.10](./ch2/exercise10.c)
 
 
-## Ch3. Control Flow
-
-[Control Flow](./ch3/ch3.md)
+## [Ch3. Control Flow](./ch3/ch3.md)
 
 [Shell Sort](./ch3/shellsort.c)
 
@@ -131,9 +127,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [3.6](./ch3/exercise6.c)
 
 
-## Ch4. Functions and Program Structure
-
-[Function in C](./ch4/ch4.md)
+## [Ch4. Functions and Program Structure](./ch4/ch4.md)
 
 [Pattern-Searching Program](./ch4/basic_func_example.c)
 
@@ -174,9 +168,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [4.14](./ch4/exercise14.c)
 
 
-## Ch5. Pointers and Arrays
-
-[Pointers and Arrays](./ch5/pointers_and_arrays.md)
+## [Ch5. Pointers and Arrays](./ch5/pointers_and_arrays.md)
 
 [Get Int](./ch5/getint.c)
 
