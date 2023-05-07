@@ -46,4 +46,28 @@
   - It is possible to pass **part of an array** to a function, by passing a pointer to the beginning of the subarray
     - eg. `f(&a[2])` or `f(a+2)` pass the address of **subarray** that starts at `a[2]`, within `f`, the parameter declaration can read `f(int arr[]) {...}` or `f(int *arr) {...}`
     - If one is sure that the element exist, it is also possible to index backwards in an array; `a[-1]`, `a[-2]` are **legal**. It is **illegal** to ref to objects that are not within the array bounds
+  - If `p` and `q` point to members of the same array, then relations like `==`, `!=`, `<`, `>=`, etc., work properly
+    ```c
+    /*
+     * strlen: return length of string s 
+     *
+     * if cautious, we would size_t for the return type,
+     * size_t is the unsigned integer type returned by the sizeof operator
+     */
+    int strlen(char *s) {
+      char *p = s;
 
+      while (*p != '\0')
+        p++;
+      return p - s;
+    }
+    ```
+  - C guarantees that **zero is never a valid address for data**, so a return value of zero can be used to signal an abnormal event. The constant zero may be assigned to a pointer, and a pointer may be compared with the constant zero
+    - The symbolic constant **NULL** (defined in <studio.h>) is often used in place of zero, as a mnemonic to indicate more clearly that this is a special value for a pointer
+  - All the pointer manipulations automatically take into account the size of the object pointed to
+  - **Valid pointer operations**
+    - Assignment of pointers of the same type
+    - Adding or subtracting a pointer and an integer
+    - Subtracting or comparing two pointer to member of the same array
+    - Assigning or comparing to zero
+  
