@@ -78,6 +78,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [String Copy](./ch5/strcpy.c)
 
+[String Compare](./ch5/strcmp.c)
+
 ### Exercise
 
 [5.1](./ch5/exercise1.c), [5.2](./ch5/exercise2.c)

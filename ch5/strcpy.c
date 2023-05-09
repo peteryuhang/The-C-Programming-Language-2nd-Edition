@@ -37,6 +37,6 @@ void strcpy_ptr2(char *s, char *t) {
 
 /* strcpy: copy t to s; pointer version 3 */
 void strcpy_ptr3(char *s, char *t) {
-  while ((*s++ = *t++))
+  while (*s++ = *t++)
     ;
 }
