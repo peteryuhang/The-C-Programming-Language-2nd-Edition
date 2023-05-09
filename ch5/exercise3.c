@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 void strcat_m(char *s, char *t);
 
