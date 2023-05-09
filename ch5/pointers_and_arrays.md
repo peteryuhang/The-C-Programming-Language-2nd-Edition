@@ -70,4 +70,16 @@
     - Adding or subtracting a pointer and an integer
     - Subtracting or comparing two pointer to member of the same array
     - Assigning or comparing to zero
+  - There is an important difference between below 2 statements:
+    ```c
+    char amsg[] = "pointer and array";  /* an array */
+    char *pmsg = "pointer and array";   /* a pointer */
+    ```
+    - Individual characters within the array may be changed but amsg will always refer to the same storage
+    - pmsg is a pointer initialized to point to **a string constant**; the pointer may subsequently be modified to point elsewhere, but the result is undefined if you try to modify the string constants
+  - `++` and `--` usage on pointer
+    ```c
+    *p++ = val;   /* push val onto stack */
+    val = *--p;   /* pop top of stack into val */
+    ```
   
