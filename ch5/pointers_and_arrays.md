@@ -82,6 +82,7 @@
     *p++ = val;   /* push val onto stack */
     val = *--p;   /* pop top of stack into val */
     ```
+  - The important advantage of the pointer array is that the rows of the array may be different length
 - **Multi-dimensional Arrays**
   - In C, a two-dimensional array is really a one-dimensional array, each of whose elements is an array
   - The parameter declaration in function for two-dimensional array must include the number of **columns**; the number of rows is irrelevant
@@ -96,3 +97,4 @@
     f(int (*daytab)[13]) {...}
     ```
     - More generally, only the **first dimension(subscript)** of an array is free; all the others have to be specified
+
