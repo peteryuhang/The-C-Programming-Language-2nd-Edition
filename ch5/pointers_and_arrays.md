@@ -82,4 +82,17 @@
     *p++ = val;   /* push val onto stack */
     val = *--p;   /* pop top of stack into val */
     ```
-  
+- **Multi-dimensional Arrays**
+  - In C, a two-dimensional array is really a one-dimensional array, each of whose elements is an array
+  - The parameter declaration in function for two-dimensional array must include the number of **columns**; the number of rows is irrelevant
+    ```c
+    f(int daytab[2][13]) {...}
+    f(int daytab[][13]) {...}
+    /*
+     * parentheses are necessary since brackets [] have higher precedence than *
+     *
+     * int *daytab[13] is an array of 13 pointers to integers
+     */
+    f(int (*daytab)[13]) {...}
+    ```
+    - More generally, only the **first dimension(subscript)** of an array is free; all the others have to be specified
