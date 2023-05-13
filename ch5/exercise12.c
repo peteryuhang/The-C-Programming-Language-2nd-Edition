@@ -102,7 +102,7 @@ void getflag(int argc, char *argv[], int *start, int *ts) {
     default:
       printf("find: illegal option %c\n", c);
       break;
-    }    
+    }
 }
 
 /* getstop: parse the tabstops stored in string number into integer */

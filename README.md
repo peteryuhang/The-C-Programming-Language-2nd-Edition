@@ -90,4 +90,4 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 ### Exercise
 
-[5.1](./ch5/exercise1.c), [5.2](./ch5/exercise2.c), [5.3](./ch5/exercise3.c), [5.4](./ch5/exercise4.c), [5.5](./ch5/exercise5.c), [5.6](./ch5/exercise6.c), [5.7](./ch5/exercise7.c), [5.8](./ch5/exercise8.c), [5.9](./ch5/exercise9.c), [5.10](./ch5/exercise10.c), [5.11](./ch5/exercise11.c), [5.12](./ch5/exercise12.c), [5.13](./ch5/exercise13.c)
+[5.1](./ch5/exercise1.c), [5.2](./ch5/exercise2.c), [5.3](./ch5/exercise3.c), [5.4](./ch5/exercise4.c), [5.5](./ch5/exercise5.c), [5.6](./ch5/exercise6.c), [5.7](./ch5/exercise7.c), [5.8](./ch5/exercise8.c), [5.9](./ch5/exercise9.c), [5.10](./ch5/exercise10.c), [5.11](./ch5/exercise11.c), [5.12](./ch5/exercise12.c), [5.13](./ch5/exercise13.c), [5.14](./ch5/exercise14.c)
