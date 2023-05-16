@@ -72,7 +72,6 @@ int getline_m(char *s, int lim) {
     *s++ = c;
     i++;
   }
-
   *s = '\0';
 
   return i;
