@@ -21,7 +21,7 @@ int getline_m(char *line, int max);
 //   return found;
 // }
 
-/* find: print lines that match pattern from 1st arg, find -nx pattern */
+/* find: print lines that match pattern from 1st arg, allow `find -nx` pattern */
 int main(int argc, char *argv[]) {
   char line[MAXLINE];
   long lineno = 0;
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
   return found;
 }
 
-/* getline_m: Read line into s, return length */
+/* getline: Read line into s, return length */
 int getline_m(char *s, int lim) {
   int c, i;
 
