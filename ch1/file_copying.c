@@ -4,7 +4,7 @@
  * program that copies its input to its output one character at a time
  * 
  * read a character
- * while (character in not end-of-file indicator)
+ * while (character in not End-of-File indicator)
  *    output the character just read
  *    read a character
  */
