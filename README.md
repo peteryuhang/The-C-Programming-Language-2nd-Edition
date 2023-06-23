@@ -70,7 +70,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 [4.1](./ch4/exercise1.c), [4.2](./ch4/exercise2.c), [4.3](./ch4/exercise3.c), [4.4](./ch4/exercise4.c), [4.5](./ch4/exercise5.c), [4.6](./ch4/exercise6.c), [4.7](./ch4/exercise7.c), [4.8](./ch4/exercise8.c), [4.9](./ch4/exercise9.c), [4.10](./ch4/exercise10.c), [4.11](./ch4/exercise11.c), [4.12](./ch4/exercise12.c), [4.13](./ch4/exercise13.c), [4.14](./ch4/exercise14.c)
 
 
-## [Ch5. Pointers and Arrays](./ch5/pointers_and_arrays.md)
+## [Ch5. Pointers and Arrays](./ch5/ch5.md)
 
 [Get Int](./ch5/getint.c)
 
