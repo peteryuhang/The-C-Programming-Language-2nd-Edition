@@ -53,3 +53,10 @@
 
 ## Arrays of Structures
 
+- C provides a compile-time unary operator called **sizeof** that can be used to compute the size of any object or type, syntax below
+  ```c
+  sizeof object
+  sizeof(type name)
+  ```
+  - **sizeof** can not be used in a `#if` line, because the preprocessor does not parse type names
+  - The expression in the `#define` is not evaluated by the preprocessor, so **sizeof** is legal there
