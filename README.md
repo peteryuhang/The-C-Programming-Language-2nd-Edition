@@ -100,3 +100,7 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 ## [Ch6. Structures](./ch6/ch6.md)
 
 [Count C Keywords](./ch6/count_c_keywords.c)
+
+### Exercise
+
+[6.1](./ch6/exercise1.c)
