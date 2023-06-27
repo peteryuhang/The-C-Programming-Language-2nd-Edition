@@ -80,6 +80,9 @@ int binsearch(char *word, struct key tab[], int n) {
   return -1;
 }
 
+/*
+ * getword: get next word or character from input
+ */
 int getword(char *word, int lim) {
   int c, getch(void);
   void ungetch(int);
