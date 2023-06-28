@@ -5,6 +5,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 - **Detail description & key points are commentted on each section's example program(usually the first one)**
 - **Every exercise's problem description also provided as comment in the code**
 
+![](Screen%20Shot%202023-06-28%20at%207.10.08%20AM.png)
+
 ## Ch1. A Tutorial Introduction
 
 [Hello World](./ch1/hello_world.c)
