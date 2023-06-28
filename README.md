@@ -103,6 +103,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Count C Keywords Pointer Version](./ch6/count_c_keywords_pointer_version.c)
 
+[Self Referential Structures](./ch6/self_referential_struct.c)
+
 ### Exercise
 
 [6.1](./ch6/exercise1.c)
