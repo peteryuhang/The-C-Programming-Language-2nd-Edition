@@ -60,3 +60,11 @@
   ```
   - **sizeof** can not be used in a `#if` line, because the preprocessor does not parse type names
   - The expression in the `#define` is not evaluated by the preprocessor, so **sizeof** is legal there
+- Don't assume that the size of a structure is the sum of the sizes of its members. Because of alignment requirement for different objects, there may be unnamed "holes" in a structure. eg.
+  ```c
+  struct {
+    char c;
+    int i;
+  }
+  ```
+  - struct above will require eight bytes, not five. The `sizeof` operator returns the proper value

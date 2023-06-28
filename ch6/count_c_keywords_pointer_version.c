@@ -65,12 +65,20 @@ int main() {
 
 struct key *binsearch(char *word, struct key tab[], int n) {
   int cond;
-  struct key *low = &tab[0]; 
+  struct key *low = &tab[0];
+  /* 
+   * The language definition does guarantee that pointer arithmetic that
+   * involves the first element beyond the end of an array(&tab[n]) will
+   * work correctly
+   */
   struct key *high = &tab[n];
   struct key *mid;
 
   while (low < high) {
+    // The addition of two pointer is illegal, but subtraction is legal
+    // high - low is the number of elements
     mid = low + (high - low)/2;
+
     if ((cond = strcmp(word, mid->word)) < 0)
       high = mid;
     else if (cond > 0)
