@@ -101,6 +101,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 [Count C Keywords](./ch6/count_c_keywords.c)
 
+[Count C Keywords Pointer Version](./ch6/count_c_keywords_pointer_version.c)
+
 ### Exercise
 
 [6.1](./ch6/exercise1.c)
