@@ -7,6 +7,7 @@
 unsigned hash(char *s);
 struct nlist *lookup(char *s);
 struct nlist *install(char *name, char *defn);
+void undef(char *name);
 
 static struct nlist *hashtab[HASHSIZE];     // pointer table
 
@@ -26,9 +27,13 @@ int main() {
   install("name3", "3");
   install("name4", "4");
 
-  struct nlist *res = lookup("name2");
+  undef("name2");
 
-  printf("%s\n", res->defn);
+  struct nlist *res2 = lookup("name2");
+  struct nlist *res3 = lookup("name3");
+
+  printf("%p\n", res2);    // 0x0
+  printf("%p\n", res3);    // 0x7f8fe9705bd0
   return 0;
 }
 
@@ -72,4 +77,28 @@ struct nlist *install(char *name, char *defn) {
   if ((np->defn = strdup(defn)) == NULL)
     return NULL;
   return np;
+}
+
+// undef: remove the name and definition
+void undef(char *name) {
+  struct nlist *np;
+  struct nlist *prev;
+
+  for (np = hashtab[hash(name)], prev = NULL; np != NULL; prev = np, np = np->next)
+    if (strcmp(name, np->name) == 0)
+      break;
+
+  // not found
+  if (np == NULL) {
+    return;
+  }
+
+  // found
+  if (prev == NULL) {
+    hashtab[hash(name)] = np->next;
+  } else {
+    prev->next = np->next;
+  }
+
+  free((void *)np);
 }
