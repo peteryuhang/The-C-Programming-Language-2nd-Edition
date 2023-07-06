@@ -118,3 +118,19 @@ PFI strcmp, numcmp;
 - A union is a structure in which all members have offset zero from the base
 - Syntactically, union is similar as struct
 - A union may only be initialized with a value of the type of its first member
+
+## Bit-fields
+
+- A set of adjacent bits within a single implementation-defined storage unit that we will call a "word"
+- The syntax of field definition and access is based on structures, eg.
+  ```c
+  struct {
+    unsigned int is_keyword : 1;
+    unsigned int is_extern : 1;
+    unsigned int is_static : 1;
+  } flags;
+  ```
+  - Individual fields are referenced in the same way as other structure members
+- Fields need not be named; unnamed fields (a colon and width only) are used for padding
+- The special width 0 may be used to force alignment at the next word boundary
+- Fields do not have addresses, so the & operator cannot be applied to them
