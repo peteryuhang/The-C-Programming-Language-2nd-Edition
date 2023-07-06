@@ -110,3 +110,6 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 ### Exercise
 
 [6.1](./ch6/exercise1.c), [6.5](./ch6/exercise5.c)
+
+
+## [Ch7. Input and Output](./ch7/ch7.md)
