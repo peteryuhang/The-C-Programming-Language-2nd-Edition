@@ -68,3 +68,35 @@
   }
   ```
   - struct above will require eight bytes, not five. The `sizeof` operator returns the proper value
+
+## Typedef
+
+- `typedef` used for creating new data type names
+- A `typedef` declaration does not create a new type in any sense; it merely adds a new name for some existing type
+
+```c
+typedef int Length;
+Length len, maxlen;      // Length can be used in exactly the same ways that the type int can be
+
+typedef struct tnode *Treeptr;
+typedef struct tnode {
+  char *word;
+  int count;
+  Treeptr left;
+  Treeptr right;
+} Treenode;
+
+Treeptr talloc(void) {
+  return (Treeptr) malloc(sizeof(Treenode));
+}
+
+// create the type PFI for "pointer to function (of two char * arguments) returning int"
+typedef int (*PFI)(char *, char *);
+PFI strcmp, numcmp;
+```
+
+- There are 2 main reasons for using `typedef`
+  1. Parameterize a program against portability problems
+    - If `typedef` are used for data types that may be machine-dependent, only the `typedef` need change when the program is moved  (eg. `size_t`, `ptrdiff_t`)
+  2. Provide better documentation for a program
+    - eg. `Treeptr` may be easier to understand than one declared only as a pointer to a complicated structure
