@@ -100,3 +100,21 @@ PFI strcmp, numcmp;
     - If `typedef` are used for data types that may be machine-dependent, only the `typedef` need change when the program is moved  (eg. `size_t`, `ptrdiff_t`)
   2. Provide better documentation for a program
     - eg. `Treeptr` may be easier to understand than one declared only as a pointer to a complicated structure
+
+## Unions
+
+- Provide a way to manipulate different kinds of data in a single area of storage, without embedding any machine-dependent information in the program
+- The purpose of union - a single variable that can legitimately hold any one of several types:
+  ```c
+  union u_tag {
+    int ival;
+    float fval;
+    char *sval;
+  } u;
+  ```
+  - The variable u will be large enough to hold the largest of the three types
+  - The specific size is implementation-dependent
+  - Type retrieved must be the type most recently stored
+- A union is a structure in which all members have offset zero from the base
+- Syntactically, union is similar as struct
+- A union may only be initialized with a value of the type of its first member
