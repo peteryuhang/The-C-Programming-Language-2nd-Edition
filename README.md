@@ -114,6 +114,8 @@ Notes and record for The C Programming Language 2nd Edition by Brian W. Kernigha
 
 ## [Ch7. Input and Output](./ch7/ch7.md)
 
+[Simplified Printf](./ch7/minprintf.c)
+
 ### Exercise
 
 [7.1](./ch7/exercise1.c)
