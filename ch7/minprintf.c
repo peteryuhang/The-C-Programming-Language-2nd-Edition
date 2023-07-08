@@ -6,6 +6,8 @@ void minprintf(char *fmt, ...);
 
 int main() {
   minprintf("%d %s\n", 1, "pppp");
+  minprintf("%f %s\n", 1.0, "pppp");
+  minprintf("%e %s\n", "aaa", "pppp");
 }
 
 // minprintf: minimal printf with variable argument list
